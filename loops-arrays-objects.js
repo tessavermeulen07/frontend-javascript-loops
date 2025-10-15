@@ -71,21 +71,22 @@
 // Ali: Communicatietraining
 // ==========================================
 
-console.log('Opdracht 3');
+// console.log('Opdracht 3');
+//
+// const employeesInTraining = [
+// 	{name: 'Max', training: 'Leiderschapstraining', month: 'Januari'},
+// 	{name: 'Sophia', training: 'Projectmanagement', month: 'Februari'},
+// 	{name: 'Ali', training: 'Communicatietraining', month: 'Januari'},
+// 	{name: 'Nina', training: 'Teamworktraining', month: 'Maart'},
+// 	{name: 'Otis', training: 'Teamworktraining', month: 'Februari'},
+// ];
+//
+// for (let i = 0; i < employeesInTraining.length; i++)
+//
+//     if (employeesInTraining[i].month === 'Januari') {
+//         console.log(`${employeesInTraining[i].name}: ${employeesInTraining[i].training}`);
+//     }
 
-const employeesInTraining = [
-	{name: 'Max', training: 'Leiderschapstraining', month: 'Januari'},
-	{name: 'Sophia', training: 'Projectmanagement', month: 'Februari'},
-	{name: 'Ali', training: 'Communicatietraining', month: 'Januari'},
-	{name: 'Nina', training: 'Teamworktraining', month: 'Maart'},
-	{name: 'Otis', training: 'Teamworktraining', month: 'Februari'},
-];
-
-for (let i = 0; i < employeesInTraining.length; i++)
-
-    if (employeesInTraining[i].month) {
-        console.log(`${employeesInTraining[i].name}: ${employeesInTraining[i].training}`);
-    }
 
 // ==========================================
 // Opdracht 4a. Medewerkers worden ieder jaar beoordeelt op hun functioneren. Het is aan Bob om de scores om te zetten
@@ -105,6 +106,9 @@ for (let i = 0; i < employeesInTraining.length; i++)
 // 6%
 // ==========================================
 
+
+console.log('Opdracht 4a');
+
 const scores = [
 	{name: 'Max', score: 83, salaryIncrease: null},
 	{name: 'Sophia', score: 77, salaryIncrease: null},
@@ -112,6 +116,23 @@ const scores = [
 	{name: 'Nina', score: 66, salaryIncrease: null},
 	{name: 'Otis', score: 100, salaryIncrease: null},
 ];
+
+// for (let i = 0; i < scores.length; i++) {
+//
+//     if (scores[i].score < 60) {
+//         console.log('0%');
+//     } else if (scores[i].score < 70) {
+//         console.log('2%');
+//     } else if (scores[i].score < 90) {
+//         console.log('3%');
+//     } else if (scores[i].score < 100) {
+//         console.log('4%');
+//     } else {
+//         console.log('6%');
+//     }
+//   }
+
+
 
 // ==========================================
 // Opdracht 4b. Breid je script uit door het percentage op te slaan in de 'salaryIncrease'-property van ieder object in de array.
@@ -128,6 +149,24 @@ const scores = [
 // ];
 // ==========================================
 
+
+console.log('Opdracht 4b');
+
+for (let i = 0; i < scores.length; i++) {
+
+    if (scores[i].score < 60) {
+        scores[i].salaryIncrease = '0%'
+    } else if (scores[i].score < 70) {
+        scores[i].salaryIncrease = '2%'
+    } else if (scores[i].score < 90) {
+        scores[i].salaryIncrease = '3%'
+    } else if (scores[i].score < 100) {
+        scores[i].salaryIncrease = '4%'
+    } else {
+        scores[i].salaryIncrease = '6%'
+    }
+}
+console.log(scores);
 
 
 // ==========================================
