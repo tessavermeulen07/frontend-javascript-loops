@@ -15,13 +15,21 @@
 // 	'Beste Otis, je salaris van €2800,- is zojuist overgemaakt. Val me nu alsjeblieft niet meer lastig.',
 // ==========================================
 
-const salaryDetails = [
-	{name: 'Max', salary: 3200},
-	{name: 'Sophia', salary: 2350},
-	{name: 'Ali', salary: 2800},
-	{name: 'Nina', salary: 3500},
-	{name: 'Otis', salary: 2800}
-];
+
+// console.log('Opdracht 1');
+//
+// const salaryDetails = [
+// 	{name: 'Max', salary: 3200},
+// 	{name: 'Sophia', salary: 2350},
+// 	{name: 'Ali', salary: 2800},
+// 	{name: 'Nina', salary: 3500},
+// 	{name: 'Otis', salary: 2800}
+// ];
+//
+// for (let i = 0; i < salaryDetails.length; i++) {
+//     console.log(`Beste ${salaryDetails[i].name}, je salaris van €${salaryDetails[i].salary},- is zojuist overgemaakt. Val me nu alsjeblieft niet meer lastig.`)
+// }
+
 
 // ==========================================
 // Opdracht 2. Wanneer iemand een verlof-aanvraag doet, moet Bob eerst uit zijn hoofd uitrekenen of deze medewerker nog
@@ -36,13 +44,21 @@ const salaryDetails = [
 // 	'Otis heeft nog 18 vakantiedagen over.',
 // ==========================================
 
-const vacationDays = [
-	{name: 'Max', totalVacationDays: 25, usedVacationDays: 10},
-	{name: 'Sophia', totalVacationDays: 30, usedVacationDays: 15},
-	{name: 'Ali', totalVacationDays: 20, usedVacationDays: 18},
-	{name: 'Nina', totalVacationDays: 25, usedVacationDays: 5},
-	{name: 'Otis', totalVacationDays: 25, usedVacationDays: 7},
-];
+
+// console.log('Opdracht 2');
+//
+// const vacationDays = [
+// 	{name: 'Max', totalVacationDays: 25, usedVacationDays: 10},
+// 	{name: 'Sophia', totalVacationDays: 30, usedVacationDays: 15},
+// 	{name: 'Ali', totalVacationDays: 20, usedVacationDays: 18},
+// 	{name: 'Nina', totalVacationDays: 25, usedVacationDays: 5},
+// 	{name: 'Otis', totalVacationDays: 25, usedVacationDays: 7},
+// ];
+//
+// for (let i = 0; i < vacationDays.length; i++) {
+//     const vacationDaysSaldo = vacationDays[i].totalVacationDays - vacationDays[i].usedVacationDays;
+//     console.log(`${vacationDays[i].name} heeft nog ${vacationDaysSaldo} vakantiedagen over.`);
+// }
 
 
 // ==========================================
@@ -55,6 +71,8 @@ const vacationDays = [
 // Ali: Communicatietraining
 // ==========================================
 
+console.log('Opdracht 3');
+
 const employeesInTraining = [
 	{name: 'Max', training: 'Leiderschapstraining', month: 'Januari'},
 	{name: 'Sophia', training: 'Projectmanagement', month: 'Februari'},
@@ -62,6 +80,12 @@ const employeesInTraining = [
 	{name: 'Nina', training: 'Teamworktraining', month: 'Maart'},
 	{name: 'Otis', training: 'Teamworktraining', month: 'Februari'},
 ];
+
+for (let i = 0; i < employeesInTraining.length; i++)
+
+    if (employeesInTraining[i].month) {
+        console.log(`${employeesInTraining[i].name}: ${employeesInTraining[i].training}`);
+    }
 
 // ==========================================
 // Opdracht 4a. Medewerkers worden ieder jaar beoordeelt op hun functioneren. Het is aan Bob om de scores om te zetten

@@ -54,10 +54,7 @@ console.log('Opdracht 3');
 //     console.log('INV-000' + i);
 // }
 
-// Dit was het antwoord
-// for (let i = 0; i < 8; i++) {
-//     console.log('INV-000' + (i + 1));
-// }
+
 
 // ==========================================
 // Opdracht 4. Schrijf een for-loop die van 9 tot en met 18 loopt en de uren logt.
@@ -110,7 +107,7 @@ console.log('Opdracht 4');
 // ==========================================
 console.log('Opdracht 5');
 // for (let i = 0; i < 10; i++) {
-//     if ( i >= 3 && i < 6) {
+//     if (i >= 3 && i < 6) {
 //         console.log('> ' + i);
 //     } else if (i >= 6) {
 //         console.log('>> ' + i);
@@ -159,8 +156,24 @@ console.log('Opdracht 5');
 
 console.log('Opdracht 6');
 
-for (let i = 0; i < 101; i++) {
-   console.log(i)
+for (let i = 1; i < 101; i++) {
+    // Veelvouden van 3 en 5 FizzBuzz ipv nummer, Boven aan staan
+    // omdat JS van boven naar beneden werkt en daarna niet meer
+    // controleert.
+    if ((i % 5 === 0) && (i % 3 === 0)) {
+        console.log('FizzBuzz')
+    }
+    // Veelvouden van 3 Fizz ipv nummer
+    else if (i % 3 === 0) {
+        console.log('Fizz');
+    }
+    // Veelvouden van 5 Buzz ipv nummer
+    else if (i % 5 === 0) {
+        console.log('Buzz');
+    }
+    // Overige getallen
+    else
+    console.log(i);
 }
 
 
