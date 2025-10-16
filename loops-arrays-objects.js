@@ -109,13 +109,13 @@
 
 console.log('Opdracht 4a');
 
-const scores = [
-	{name: 'Max', score: 83, salaryIncrease: null},
-	{name: 'Sophia', score: 77, salaryIncrease: null},
-	{name: 'Ali', score: 92, salaryIncrease: null},
-	{name: 'Nina', score: 66, salaryIncrease: null},
-	{name: 'Otis', score: 100, salaryIncrease: null},
-];
+// const scores = [
+// 	{name: 'Max', score: 83, salaryIncrease: null},
+// 	{name: 'Sophia', score: 77, salaryIncrease: null},
+// 	{name: 'Ali', score: 92, salaryIncrease: null},
+// 	{name: 'Nina', score: 66, salaryIncrease: null},
+// 	{name: 'Otis', score: 100, salaryIncrease: null},
+// ];
 
 // for (let i = 0; i < scores.length; i++) {
 //
@@ -150,23 +150,23 @@ const scores = [
 // ==========================================
 
 
-console.log('Opdracht 4b');
-
-for (let i = 0; i < scores.length; i++) {
-
-    if (scores[i].score < 60) {
-        scores[i].salaryIncrease = '0%'
-    } else if (scores[i].score < 70) {
-        scores[i].salaryIncrease = '2%'
-    } else if (scores[i].score < 90) {
-        scores[i].salaryIncrease = '3%'
-    } else if (scores[i].score < 100) {
-        scores[i].salaryIncrease = '4%'
-    } else {
-        scores[i].salaryIncrease = '6%'
-    }
-}
-console.log(scores);
+// console.log('Opdracht 4b');
+//
+// for (let i = 0; i < scores.length; i++) {
+//
+//     if (scores[i].score < 60) {
+//         scores[i].salaryIncrease = '0%'
+//     } else if (scores[i].score < 70) {
+//         scores[i].salaryIncrease = '2%'
+//     } else if (scores[i].score < 90) {
+//         scores[i].salaryIncrease = '3%'
+//     } else if (scores[i].score < 100) {
+//         scores[i].salaryIncrease = '4%'
+//     } else {
+//         scores[i].salaryIncrease = '6%'
+//     }
+// }
+// console.log(scores);
 
 
 // ==========================================
@@ -186,6 +186,8 @@ console.log(scores);
 // ]
 // ==========================================
 
+
+console.log('Opdracht 5');
 const employees = [
 	{firstName: 'Max', lastName: 'Janssen'},
 	{firstName: 'Sophia', lastName: 'Vries'},
@@ -194,9 +196,22 @@ const employees = [
 	{firstName: 'Otis', lastName: 'Kuiper'},
 ];
 
+
+for (let i = 0; i < employees.length; i++) {
+     employees[i].email = `${employees[i].firstName}.${employees[i].lastName}@loop-it-solutions.nl`
+}
+console.log(employees)
+
+
 // ==========================================
 // Opdracht 6 (BONUS). Bob wil dat alle e-mailadressen in kleine letters worden opgeslagen, zodat ze consistent zijn.
 // Kun je je script aanpassen om dit voor elkaar te krijgen? Dit heb je nog niet geleerd, maar Google is your best friend...
 // ==========================================
+
+console.log('Opdracht 6');
+
+for (let i = 0; i < employees.length; i++) {
+    console.log(employees[i].email = employees[i].email.toLowerCase());
+}
 
 
